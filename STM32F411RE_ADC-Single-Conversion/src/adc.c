@@ -1,7 +1,7 @@
 #include "adc.h"
 
 #define GPIOA_EN (1 << 0)
-#define APB1_EN (1 << 8)
+#define APB2_EN (1 << 8)
 #define ADC_CH1 (1 << 0)
 #define ADC_SEQ_LEN_1 0x00
 #define CR2_ADON (1 << 0)
@@ -15,11 +15,11 @@ void pa1_adc_init(void)
     RCC->AHB1ENR |= GPIOA_EN;
     /*Set the mode of PA1 to analog*/
     GPIOA->MODER |= (1 << 2);
-    GPIOA->MODER |= (1 << 2);
+    GPIOA->MODER |= (1 << 3);
 
     /*CONFIGURE THE ADC MODULE*/
     /*Enable clock access to ADC*/
-    RCC->APB1ENR |= APB1_EN;
+    RCC->APB2ENR |= APB2_EN;
     /*Conversion sequence start*/
     ADC1->SQR3 = ADC_CH1;
     /*Conversion sequence length*/

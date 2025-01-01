@@ -14,7 +14,6 @@
 
 static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t PeriphClk, uint32_t BaudRate);
 static uint16_t compute_uart_bd(uint32_t PeriphClk, uint32_t BaudRate);
-void uart2_write(int ch);
 
 int __io_putchar(int ch)
 {
@@ -87,6 +86,6 @@ char uart2_read(void)
     while (!(USART2->SR & SR_RXNE))
     {
     }
-    /*Write transmit data register*/
+    /*Read data register*/
     return USART2->DR;
 }
