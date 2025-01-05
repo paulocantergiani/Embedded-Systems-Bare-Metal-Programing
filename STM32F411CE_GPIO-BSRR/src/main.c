@@ -14,9 +14,9 @@ int main(void)
 
     while(1){
         GPIOA->BSRR = PIN_5_SET;
-        for(int i = 0; i<50000; i++){   }
+        for(int i = 0; i<16000000; i++){   }
 
         GPIOA->BSRR = PIN_5_RST;
-        for(int i = 0; i<50000; i++){   }
+        for(int i = 0; i<16000000; i++){   }
     }
 }
