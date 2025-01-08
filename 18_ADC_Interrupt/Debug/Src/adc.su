@@ -1,0 +1,5 @@
+/home/paulo-cantergiani/Documents/STM32F11-BareMetal/chip_headers/CMSIS/Include/core_cm4.h:1684:22:__NVIC_EnableIRQ	16	static,ignoring_inline_asm
+../Src/adc.c:12:6:pa1_adc_interrupt_init	8	static
+../Src/adc.c:36:6:pa1_adc_init	4	static
+../Src/adc.c:56:6:start_conversion	4	static
+../Src/adc.c:64:10:adc_read	4	static

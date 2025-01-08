@@ -1,0 +1,9 @@
+/home/paulo-cantergiani/Documents/STM32F11-BareMetal/chip_headers/CMSIS/Include/core_cm4.h:1684:22:__NVIC_EnableIRQ	2
+../Src/uart.c:17:5:__io_putchar	1
+../Src/uart.c:23:6:uart2_tx_init	1
+../Src/uart.c:49:6:uart2_rxtx_init	1
+../Src/uart.c:88:6:uart2_rx_interrupt_init	1
+../Src/uart.c:131:13:uart_set_baudrate	1
+../Src/uart.c:136:17:compute_uart_bd	1
+../Src/uart.c:141:6:uart2_write	2
+../Src/uart.c:151:6:uart2_read	2

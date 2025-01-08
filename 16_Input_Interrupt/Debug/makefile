@@ -59,8 +59,8 @@ all: main-build
 main-build: Bare-Metal-Test.elf secondary-outputs
 
 # Tool invocations
-Bare-Metal-Test.elf Bare-Metal-Test.map: $(OBJS) $(USER_OBJS) /home/paulo-cantergiani/Documents/STM32F11-BareMetal/Bare-Metal-Test/STM32F411RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Bare-Metal-Test.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/paulo-cantergiani/Documents/STM32F11-BareMetal/Bare-Metal-Test/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Bare-Metal-Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Bare-Metal-Test.elf Bare-Metal-Test.map: $(OBJS) $(USER_OBJS) /home/paulo-cantergiani/Documents/GitHub\ Repositories/Embedded-Systems-Bare-Metal-Programing/16_Input_Interrupt/STM32F411RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Bare-Metal-Test.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/paulo-cantergiani/Documents/GitHub Repositories/Embedded-Systems-Bare-Metal-Programing/16_Input_Interrupt/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Bare-Metal-Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

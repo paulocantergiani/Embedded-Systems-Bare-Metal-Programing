@@ -1,0 +1,116 @@
+2025-01-06 20:12:42,709 [INFO] Activator:176 - 
+
+
+2025-01-06 20:12:42,710 [INFO] Activator:177 - !SESSION log4j initialized
+2025-01-06 20:12:46,027 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2025-01-06 20:12:46,242 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] java.net.URISyntaxException: Illegal character in path at index 45: file:/home/paulo-cantergiani/Documents/GitHub Repositories/Embedded-Systems-Bare-Metal-Programing/.metadata/.log4j2.xml
+2025-01-06 20:12:46,242 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.net.URI$Parser.fail(URI.java:2995)
+2025-01-06 20:12:46,243 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.net.URI$Parser.checkChars(URI.java:3166)
+2025-01-06 20:12:46,243 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3248)
+2025-01-06 20:12:46,244 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.net.URI$Parser.parse(URI.java:3196)
+2025-01-06 20:12:46,244 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.net.URI.<init>(URI.java:645)
+2025-01-06 20:12:46,244 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.net.URL.toURI(URL.java:1220)
+2025-01-06 20:12:46,244 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.common.mx.core.CubeMxInstance.getInstance(CubeMxInstance.java:81)
+2025-01-06 20:12:46,244 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.common.mx.userauth.UserAuthAdapter.<init>(UserAuthAdapter.java:25)
+2025-01-06 20:12:46,244 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.common.mx.userauth.UserAuthProvider.getUserAuthAdapter(UserAuthProvider.java:16)
+2025-01-06 20:12:46,245 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.common.ecosystemintegration.ui.core.MCUEcoSystemIntegrationUiHelper.getUserAuth(MCUEcoSystemIntegrationUiHelper.java:100)
+2025-01-06 20:12:46,245 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.userauth.UserAuthStartup.earlyStartup(UserAuthStartup.java:32)
+2025-01-06 20:12:46,245 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:79)
+2025-01-06 20:12:46,245 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+2025-01-06 20:12:46,245 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+2025-01-06 20:12:46,245 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.Workbench$39.run(Workbench.java:2762)
+2025-01-06 20:12:46,245 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-01-06 20:13:05,705 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 
+2025-01-06 20:13:33,421 [INFO] Activator:176 - 
+
+
+2025-01-06 20:13:33,422 [INFO] Activator:177 - !SESSION log4j initialized
+2025-01-06 20:13:34,690 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2025-01-06 20:13:34,879 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] java.net.URISyntaxException: Illegal character in path at index 45: file:/home/paulo-cantergiani/Documents/GitHub Repositories/Embedded-Systems-Bare-Metal-Programing/.metadata/.log4j2.xml
+2025-01-06 20:13:34,879 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.net.URI$Parser.fail(URI.java:2995)
+2025-01-06 20:13:34,880 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.net.URI$Parser.checkChars(URI.java:3166)
+2025-01-06 20:13:34,880 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3248)
+2025-01-06 20:13:34,880 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.net.URI$Parser.parse(URI.java:3196)
+2025-01-06 20:13:34,880 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.net.URI.<init>(URI.java:645)
+2025-01-06 20:13:34,880 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.net.URL.toURI(URL.java:1220)
+2025-01-06 20:13:34,881 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.common.mx.core.CubeMxInstance.getInstance(CubeMxInstance.java:81)
+2025-01-06 20:13:34,881 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.common.mx.userauth.UserAuthAdapter.<init>(UserAuthAdapter.java:25)
+2025-01-06 20:13:34,881 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.common.mx.userauth.UserAuthProvider.getUserAuthAdapter(UserAuthProvider.java:16)
+2025-01-06 20:13:34,881 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.common.ecosystemintegration.ui.core.MCUEcoSystemIntegrationUiHelper.getUserAuth(MCUEcoSystemIntegrationUiHelper.java:100)
+2025-01-06 20:13:34,881 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.userauth.UserAuthStartup.earlyStartup(UserAuthStartup.java:32)
+2025-01-06 20:13:34,881 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:79)
+2025-01-06 20:13:34,882 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+2025-01-06 20:13:34,882 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+2025-01-06 20:13:34,882 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.Workbench$39.run(Workbench.java:2762)
+2025-01-06 20:13:34,882 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-01-06 21:57:49,358 [ERROR] ConfigurationRetriever:142 - IOException on connection: Read timed out
+2025-01-06 22:12:35,643 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 
+2025-01-06 22:12:42,159 [INFO] Activator:176 - 
+
+
+2025-01-06 22:12:42,161 [INFO] Activator:177 - !SESSION log4j initialized
+2025-01-06 22:12:44,378 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2025-01-06 22:12:44,838 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] java.net.URISyntaxException: Illegal character in path at index 45: file:/home/paulo-cantergiani/Documents/GitHub Repositories/Embedded-Systems-Bare-Metal-Programing/.metadata/.log4j2.xml
+2025-01-06 22:12:44,838 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.net.URI$Parser.fail(URI.java:2995)
+2025-01-06 22:12:44,839 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.net.URI$Parser.checkChars(URI.java:3166)
+2025-01-06 22:12:44,839 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3248)
+2025-01-06 22:12:44,839 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.net.URI$Parser.parse(URI.java:3196)
+2025-01-06 22:12:44,839 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.net.URI.<init>(URI.java:645)
+2025-01-06 22:12:44,839 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.net.URL.toURI(URL.java:1220)
+2025-01-06 22:12:44,840 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.common.mx.core.CubeMxInstance.getInstance(CubeMxInstance.java:81)
+2025-01-06 22:12:44,840 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.common.mx.userauth.UserAuthAdapter.<init>(UserAuthAdapter.java:25)
+2025-01-06 22:12:44,840 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.common.mx.userauth.UserAuthProvider.getUserAuthAdapter(UserAuthProvider.java:16)
+2025-01-06 22:12:44,840 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.common.ecosystemintegration.ui.core.MCUEcoSystemIntegrationUiHelper.getUserAuth(MCUEcoSystemIntegrationUiHelper.java:100)
+2025-01-06 22:12:44,840 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.userauth.UserAuthStartup.earlyStartup(UserAuthStartup.java:32)
+2025-01-06 22:12:44,840 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:79)
+2025-01-06 22:12:44,841 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+2025-01-06 22:12:44,841 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+2025-01-06 22:12:44,841 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.Workbench$39.run(Workbench.java:2762)
+2025-01-06 22:12:44,841 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-01-06 22:28:26,580 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 
+2025-01-06 22:28:33,202 [INFO] Activator:176 - 
+
+
+2025-01-06 22:28:33,204 [INFO] Activator:177 - !SESSION log4j initialized
+2025-01-06 22:28:34,576 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2025-01-06 22:28:35,051 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] java.net.URISyntaxException: Illegal character in path at index 45: file:/home/paulo-cantergiani/Documents/GitHub Repositories/Embedded-Systems-Bare-Metal-Programing/.metadata/.log4j2.xml
+2025-01-06 22:28:35,051 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.net.URI$Parser.fail(URI.java:2995)
+2025-01-06 22:28:35,051 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.net.URI$Parser.checkChars(URI.java:3166)
+2025-01-06 22:28:35,052 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3248)
+2025-01-06 22:28:35,052 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.net.URI$Parser.parse(URI.java:3196)
+2025-01-06 22:28:35,052 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.net.URI.<init>(URI.java:645)
+2025-01-06 22:28:35,052 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.net.URL.toURI(URL.java:1220)
+2025-01-06 22:28:35,052 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.common.mx.core.CubeMxInstance.getInstance(CubeMxInstance.java:81)
+2025-01-06 22:28:35,053 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.common.mx.userauth.UserAuthAdapter.<init>(UserAuthAdapter.java:25)
+2025-01-06 22:28:35,053 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.common.mx.userauth.UserAuthProvider.getUserAuthAdapter(UserAuthProvider.java:16)
+2025-01-06 22:28:35,053 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.common.ecosystemintegration.ui.core.MCUEcoSystemIntegrationUiHelper.getUserAuth(MCUEcoSystemIntegrationUiHelper.java:100)
+2025-01-06 22:28:35,053 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.userauth.UserAuthStartup.earlyStartup(UserAuthStartup.java:32)
+2025-01-06 22:28:35,053 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:79)
+2025-01-06 22:28:35,053 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+2025-01-06 22:28:35,053 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+2025-01-06 22:28:35,054 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.Workbench$39.run(Workbench.java:2762)
+2025-01-06 22:28:35,054 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-01-06 22:48:24,795 [INFO] Activator:176 - 
+
+
+2025-01-06 22:48:24,796 [INFO] Activator:177 - !SESSION log4j initialized
+2025-01-06 22:48:27,043 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2025-01-06 22:48:27,420 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] java.net.URISyntaxException: Illegal character in path at index 45: file:/home/paulo-cantergiani/Documents/GitHub Repositories/Embedded-Systems-Bare-Metal-Programing/.metadata/.log4j2.xml
+2025-01-06 22:48:27,420 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.net.URI$Parser.fail(URI.java:2995)
+2025-01-06 22:48:27,421 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.net.URI$Parser.checkChars(URI.java:3166)
+2025-01-06 22:48:27,421 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3248)
+2025-01-06 22:48:27,421 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.net.URI$Parser.parse(URI.java:3196)
+2025-01-06 22:48:27,421 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.net.URI.<init>(URI.java:645)
+2025-01-06 22:48:27,421 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at java.base/java.net.URL.toURI(URL.java:1220)
+2025-01-06 22:48:27,421 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.common.mx.core.CubeMxInstance.getInstance(CubeMxInstance.java:81)
+2025-01-06 22:48:27,421 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.common.mx.userauth.UserAuthAdapter.<init>(UserAuthAdapter.java:25)
+2025-01-06 22:48:27,421 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.common.mx.userauth.UserAuthProvider.getUserAuthAdapter(UserAuthProvider.java:16)
+2025-01-06 22:48:27,422 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.common.ecosystemintegration.ui.core.MCUEcoSystemIntegrationUiHelper.getUserAuth(MCUEcoSystemIntegrationUiHelper.java:100)
+2025-01-06 22:48:27,422 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at com.st.stm32cube.ide.mcu.userauth.UserAuthStartup.earlyStartup(UserAuthStartup.java:32)
+2025-01-06 22:48:27,422 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:79)
+2025-01-06 22:48:27,422 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+2025-01-06 22:48:27,422 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+2025-01-06 22:48:27,422 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.ui.internal.Workbench$39.run(Workbench.java:2762)
+2025-01-06 22:48:27,422 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-01-06 22:49:30,902 [ERROR] ConfigurationRetriever:142 - IOException on connection: Read timed out
+2025-01-06 22:54:22,125 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 

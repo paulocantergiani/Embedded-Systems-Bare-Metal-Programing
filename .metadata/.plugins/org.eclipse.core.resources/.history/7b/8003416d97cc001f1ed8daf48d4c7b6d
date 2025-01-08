@@ -1,0 +1,8 @@
+#ifndef TIM_H_
+#define TIM_H_
+
+#include "tim.c"
+
+void tim2_1hz_init(void);
+
+#endif /*TIM_H_*/

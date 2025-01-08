@@ -1,0 +1,33 @@
+#include "adxl345.h"
+
+
+void adxl_read_address(uint8_t reg)
+{
+
+}
+
+void adxl_write(uint8_t reg, char value)
+{
+
+}
+
+void adxl_read_values(uint8_t reg)
+{
+
+}
+
+void adxl_init(void)
+{
+	/*Initialize SPI GPIO's*/
+	spi_gpio_init();
+	/*Configure SPI module*/
+	spi1_config();
+	/*Read the device ID, this should return 0xE5*/
+	adxl_read_address(DEV_ID_R);
+	/*Set data format range to +-4g*/
+	adxl_write(DATA_FORMAT_R, FOUR_G);
+	/*Reset all bits*/
+	adxl_write(POWER_CTRL_R, RESET);
+	/*Configure power control measure bit*/
+	adxl_write(POWER_CTRL_R, SET_MEASURE_B);
+}

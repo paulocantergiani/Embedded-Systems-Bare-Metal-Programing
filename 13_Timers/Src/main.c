@@ -7,6 +7,8 @@
 #define PIN5 (1 << 5)
 #define SR_UIF (1 << 0)
 
+uint32_t sensor_value;
+
 int main(void)
 {
     RCC->AHB1ENR |= GPIOA_EN;
@@ -20,8 +22,9 @@ int main(void)
         while (!(TIM2->SR & SR_UIF))
         {
         }
-        // Clear UIF flag
-        TIM2->SR &= ~SR_UIF;
+    	/*Clear update interrupt flag*/
+    	TIM2->SR &= ~SR_UIF;
+
         printf("A second has passed!\r\n");
         GPIOA->ODR ^= PIN5;
     }

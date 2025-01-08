@@ -1,0 +1,64 @@
+#include "spi.h"
+
+#define SPI1_EN (1 << 12)
+#define GPIOA_EN (1 << 0)
+
+
+/*
+ * PA5-----CLK
+ * PA6-----MISO
+ * PA7-----MOSI
+ * PA9-----Slave Select
+ * */
+void spi_gpio_init(void)
+{
+	/*Enable clock access to GPIOA*/
+	RCC->AHB1ENR |= GPIOA_EN;
+
+	/*Set PA5, PA6 and PA7 mode to alternate function*/
+
+	/*PA5*/
+	GPIOA->MODER &= ~(1 << 10);
+	GPIOA->MODER |= (1 << 11);
+
+	/*PA6*/
+	GPIOA->MODER &= ~(1 << 12);
+	GPIOA->MODER |= (1 << 13);
+
+	/*PA7*/
+	GPIOA->MODER &= ~(1 << 14);
+	GPIOA->MODER |= (1 << 15);
+
+	/*Set PA9 as output pin*/
+	GPIOA->MODER |= (1 << 18);
+	GPIOA->MODER &= ~(1 << 19);
+
+	/*Set PA5, PA6 and PA7 alternate function mode to SPI1(AF07)*/
+
+	/*PA5*/
+	GPIOA->AFR[0] |= (1 << 20);
+	GPIOA->AFR[0] &= ~(1 << 21);
+	GPIOA->AFR[0] |= (1 << 22);
+	GPIOA->AFR[0] &= ~(1 << 23);
+
+	/*PA6*/
+	GPIOA->AFR[0] |= (1 << 24);
+	GPIOA->AFR[0] &= ~(1 << 25);
+	GPIOA->AFR[0] |= (1 << 26);
+	GPIOA->AFR[0] &= ~(1 << 27);
+
+	/*PA7*/
+	GPIOA->AFR[0] |= (1 << 28);
+	GPIOA->AFR[0] &= ~(1 << 29);
+	GPIOA->AFR[0] |= (1 << 30);
+	GPIOA->AFR[0] &= ~(1 << 31);
+
+
+}
+
+
+
+
+
+
+

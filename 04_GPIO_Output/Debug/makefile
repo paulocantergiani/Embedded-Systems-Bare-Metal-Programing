@@ -33,34 +33,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := Bare-Metal-Test
+BUILD_ARTIFACT_NAME := 04_GPIO_Output
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-Bare-Metal-Test.elf \
+04_GPIO_Output.elf \
 
 MAP_FILES += \
-Bare-Metal-Test.map \
+04_GPIO_Output.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-Bare-Metal-Test.list \
+04_GPIO_Output.list \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: Bare-Metal-Test.elf secondary-outputs
+main-build: 04_GPIO_Output.elf secondary-outputs
 
 # Tool invocations
-Bare-Metal-Test.elf Bare-Metal-Test.map: $(OBJS) $(USER_OBJS) /home/paulo-cantergiani/Documents/STM32F11-BareMetal/Bare-Metal-Test/STM32F411RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Bare-Metal-Test.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/paulo-cantergiani/Documents/STM32F11-BareMetal/Bare-Metal-Test/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Bare-Metal-Test.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+04_GPIO_Output.elf 04_GPIO_Output.map: $(OBJS) $(USER_OBJS) /home/paulo-cantergiani/Documents/GitHub\ Repositories/Embedded-Systems-Bare-Metal-Programing/04_GPIO_Output/STM32F411RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "04_GPIO_Output.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/paulo-cantergiani/Documents/GitHub Repositories/Embedded-Systems-Bare-Metal-Programing/04_GPIO_Output/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="04_GPIO_Output.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -69,14 +69,14 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-Bare-Metal-Test.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "Bare-Metal-Test.list"
+04_GPIO_Output.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "04_GPIO_Output.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) Bare-Metal-Test.elf Bare-Metal-Test.list Bare-Metal-Test.map default.size.stdout
+	-$(RM) 04_GPIO_Output.elf 04_GPIO_Output.list 04_GPIO_Output.map default.size.stdout
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)

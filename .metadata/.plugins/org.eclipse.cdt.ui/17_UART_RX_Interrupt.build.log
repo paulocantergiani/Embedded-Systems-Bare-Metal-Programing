@@ -1,0 +1,10 @@
+21:57:46 **** Incremental Build of configuration Debug for project 17_UART_RX_Interrupt ****
+make -j16 all 
+arm-none-eabi-size  17_UART_RX_Interrupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4160	     92	   1908	   6160	   1810	17_UART_RX_Interrupt.elf
+Finished building: default.size.stdout
+ 
+
+21:57:47 Build Finished. 0 errors, 0 warnings. (took 174ms)
+

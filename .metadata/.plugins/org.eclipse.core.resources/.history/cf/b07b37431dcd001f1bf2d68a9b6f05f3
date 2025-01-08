@@ -1,0 +1,48 @@
+#include "stm32f411xe.h"
+
+
+#define GPIOB_EN (1 << 1)
+#define I2C1_EN (1 << 21)
+#define CR1_SWRST (1 << 15)
+#define I2C1_100KHz 80
+#define SD_MODE_MAX_RISE_TIME 17
+#define CR1_PR (1 << 0)
+
+/*
+ * PB8 ---- SCL
+ * PB9 ---- SDA
+ */
+
+void I2C1_init(void)
+{
+	/*Enable clock access to GPIOB*/
+	RCC->AHB1ENR |= GPIOB_EN;
+	/*Set PB8 and PB9 to alternate function mode*/
+	GPIOB->MODER &= ~(1 << 16);
+	GPIOB->MODER |= (1 << 17);
+	GPIOB->MODER &= ~(1 << 18);
+	GPIOB->MODER |= (1 << 19);
+	/*Set PB8 and PB9 output type to drain mode*/
+	GPIOB->OTYPER |= (1 << 8);
+	GPIOB->OTYPER |= (1 << 9);
+	/*Enable Pull-up for PA8 and PA9*/
+	GPIOB->PUPDR |= (1 << 16);
+	GPIOB->PUPDR &= ~(1 << 17);
+	GPIOB->PUPDR |= (1 << 18);
+	GPIOB->PUPDR &= ~(1 << 19);
+
+	/*Enable clock access to I2C1*/
+	RCC->AHB1ENR |= I2C1_EN;
+	/*Enter reset mode*/
+	I2C1->CR1 |= CR1_SWRST;
+	/*Come out of reset mode*/
+	I2C1->CR1 &= ~CR1_SWRST;
+	/*Set peripheral clock frequency*/
+	I2C1->CR2 |= (1 << 4); //16MHz
+	/*Set I2C to standard mode, 100KHz clock*/
+	I2C1->CCR |= I2C1_100KHz;
+	/*Set rise time*/
+	I2C1->TRISE = SD_MODE_MAX_RISE_TIME;
+	/*Enable I2C1 module*/
+	I2C1->CR1 |= CR1_PR;
+}

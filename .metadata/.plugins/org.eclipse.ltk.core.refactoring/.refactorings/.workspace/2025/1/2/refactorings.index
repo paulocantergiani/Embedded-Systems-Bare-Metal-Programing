@@ -1,0 +1,6 @@
+1736213450717	Delete resource '13_Timers/Src/systick.c'
+1736213478866	Delete resource '13_Timers/Inc/systick.h'
+1736253023474	Delete resource 'Bare-Metal-Test'
+1736253052855	Rename resource '17_UART_TX_DMA'
+1736353091327	Delete resource '23_SPI_ADXL346/Src/i2c.c'
+1736353099403	Delete resource '23_SPI_ADXL346/Inc/i2c.h'
